@@ -1,0 +1,492 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #eaeff3;
+}
+
+#mainphoto {
+  width: 100%;
+  /* display: flex; */
+}
+
+/* .topnav {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  top: 0%;
+}
+
+.map {
+  color: #747c9c;
+  text-decoration: none;
+  font-family: "Laila", serif;
+  float: right;
+  padding-right: 10px;
+}
+
+.bar {
+  text-decoration: none;
+  font-family: "Laila", serif;
+  color: #241756;
+  float: left;
+  padding-left: 13px;
+  font-size: 20px;
+} */
+
+#story {
+  display: grid;
+  grid-template-columns: repeat (autofill, minmax(120px, 1fr));
+  /* flex-direction: column; */
+  color: rgb(70, 70, 71);
+  text-align: justify;
+  /* width: 100%; */
+}
+
+#story p {
+  /* display: flex; */
+  /* align-content: center; */
+  /* padding: 2em; */
+  grid-column: 2;
+  width: 50%;
+  /* margin: 50px auto; */
+}
+
+/* Important People */
+
+#people {
+  background-color: #486294;
+  height: 550px;
+  color: aliceblue;
+  /* padding-top: 190px; */
+  display: grid;
+  grid-template: repeat(4, [row] minmax(120px, 1fr)) / repeat(7, [col] 1fr);
+}
+
+.peoplefrase {
+  grid-row: 1;
+  grid-column: 2;
+  /* position: absolute;
+  padding-left: 20px;
+  top: 1530px; */
+  font-size: 80px;
+  z-index: 2;
+}
+
+#people ul {
+  grid-row: 2;
+  grid-column: 2;
+  width: 80%;
+  margin: auto;
+  letter-spacing: 0.2em;
+}
+
+#people li {
+  /* grid-row: 2;
+  grid-column: 2; */
+  /* width: 100px; */
+  /* margin: 0 50px 0 50px; */
+  display: inline-block;
+  text-shadow: -1px -1px 0px rgba(255, 255, 255, 0.3),
+    1px 1px 0px rgba(0, 0, 0, 0.8);
+  color: #fbfbfb;
+}
+
+#people img {
+  border-radius: 50%;
+  width: 110px;
+  margin-top: 23px;
+}
+
+#img1 {
+  box-shadow: 3px 2px 43px -1px rgba(0, 0, 0, 0.73);
+}
+
+#img2 {
+  box-shadow: 3px 2px 43px -1px rgba(0, 0, 0, 0.73);
+}
+
+#img3 {
+  /* position: relative;
+  left: 584px; */
+  box-shadow: 3px 2px 43px -1px rgba(0, 0, 0, 0.73);
+}
+
+#img4 {
+  /* position: relative;
+  left: 776px; */
+  box-shadow: 3px 2px 43px -1px rgba(0, 0, 0, 0.73);
+}
+
+#img5 {
+  /* position: relative;
+  left: 986px; */
+  box-shadow: 3px 2px 43px -1px rgba(0, 0, 0, 0.73);
+}
+
+.tooltip {
+  grid-row: 3;
+  grid-column: 2;
+  /* position: relative; */
+  /* display: inline-block; */
+  /* width: 0px; */
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 958px;
+  margin: -230px 0 0 311px;
+  background-color: #486294;
+  color: #fff;
+  text-align: justify;
+
+  padding: 0 525px 0 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip2 {
+  grid-row: 3;
+  grid-column: 3;
+  /* position: relative;
+  display: inline-block;
+  width: 0px; */
+}
+
+.tooltip2 .tooltiptext2 {
+  visibility: hidden;
+  width: 778px;
+  margin: -240px 0 0 296px;
+  background-color: #486294;
+  color: #fff;
+  text-align: justify;
+  padding: 15px 348px 0 17px;
+  position: absolute;
+  left: 221px;
+  top: 119px;
+  z-index: 1;
+}
+
+.emptycontainer1 {
+  visibility: hidden;
+  position: absolute;
+  bottom: -40px;
+  width: 320px;
+  height: 408px;
+  background-color: #486294;
+}
+
+.tooltip2:hover .tooltiptext2 {
+  visibility: visible;
+}
+
+.tooltip2:hover .emptycontainer1 {
+  visibility: visible;
+}
+
+.tooltip3 {
+  grid-row: 3;
+  grid-column: 4;
+  /* position: relative;
+  display: inline-block;
+  width: 0px; */
+}
+
+.tooltip3 .tooltiptext3 {
+  visibility: hidden;
+  width: 579px;
+  margin: -270px 0 0 286px;
+  background-color: #486294;
+  color: #fff;
+  text-align: justify;
+  padding: 15px 130px 0 17px;
+  position: absolute;
+  left: 453px;
+  z-index: 1;
+}
+
+.emptycontainer2 {
+  visibility: hidden;
+  position: absolute;
+  bottom: -38px;
+  width: 520px;
+  height: 210px;
+  background-color: #486294;
+}
+
+.tooltip3:hover .tooltiptext3 {
+  visibility: visible;
+}
+
+.tooltip3:hover .emptycontainer2 {
+  visibility: visible;
+}
+
+.tooltip4 {
+  grid-row: 3;
+  grid-column: 5;
+  /* position: relative;
+  display: inline-block;
+  width: 0px; */
+}
+
+.tooltip4 .tooltiptext4 {
+  visibility: hidden;
+  width: 620px;
+  margin: -250px 0 0 286px;
+  background-color: #486294;
+  color: #fff;
+  text-align: justify;
+  padding: 0 15px 0 184px;
+  position: absolute;
+  left: -160px;
+  z-index: 1;
+}
+
+.emptycontainer3 {
+  visibility: hidden;
+  position: absolute;
+  left: 930px;
+  bottom: -34px;
+  width: 301px;
+  height: 209px;
+  background-color: #486294;
+  z-index: 1;
+}
+
+.tooltip4:hover .tooltiptext4 {
+  visibility: visible;
+}
+.tooltip4:hover .emptycontainer3 {
+  visibility: visible;
+}
+
+.tooltip5 {
+  grid-row: 3;
+  grid-column: 6;
+  /* position: relative;
+  display: inline-block;
+  width: 0px; */
+}
+
+.tooltip5 .tooltiptext5 {
+  visibility: hidden;
+  width: 820px;
+  margin: -250px 0 0 286px;
+  background-color: #486294;
+  color: #fff;
+  text-align: justify;
+  padding: 15px 0 0 407px;
+  position: absolute;
+  left: -180px;
+  z-index: 1;
+}
+
+.tooltip5:hover .tooltiptext5 {
+  visibility: visible;
+}
+
+.tooltip5:hover .emptycontainer4 {
+  visibility: visible;
+}
+
+/* End of important people */
+
+/* Places */
+
+hr {
+  height: 50px;
+  background-color: #f3f6f8;
+  border: none;
+}
+
+.places {
+  background-color: #b1c8d84f;
+  height: 4200px;
+}
+
+#placesfrase {
+  position: absolute;
+  padding-left: 20px;
+  top: 2102px;
+  color: #241756;
+  font-size: 80px;
+  z-index: 2;
+}
+
+.firstgrid {
+  display: grid;
+  grid-template: repeat(3, [row] minmax(120px, 1fr)) / repeat(4, [col] 1fr);
+}
+
+h2 {
+  padding: 0 0 10px 0;
+}
+.article1 {
+  align-items: center;
+  justify-items: center;
+  grid-column: 2 / span 4;
+  grid-row: 4 / span 4;
+  width: 40em;
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 19px -1px #000000;
+}
+#arxaiowdeiophoto {
+  align-items: center;
+  justify-items: center;
+  grid-column: 3;
+  grid-row: 2 / span 4;
+  width: 50em;
+  border-radius: 10px;
+  transition: all 1.5s ease-in-out;
+}
+
+#arxaiowdeiophoto:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+.secondgrid {
+  display: grid;
+  grid-template:
+    repeat(5, [row] 1fr)
+    / repeat(6, [col] minmax(100px, 5fr));
+}
+.article2 {
+  align-items: center;
+  justify-items: center;
+  grid-column: 4;
+  grid-row: 4 / span 5;
+  width: 34em;
+  height: 22em;
+  /* position: relative;
+  top: 105px;
+  left: 560px; */
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 19px -1px #000000;
+}
+#theatrakiphoto {
+  align-items: center;
+  justify-items: center;
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 4;
+  width: 45em;
+  /* position: relative;
+  top: 278px;
+  left: 172px; */
+  border-radius: 10px;
+  transition: all 1.5s ease-in-out;
+}
+
+#theatrakiphoto:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+.article3 {
+  width: 40%;
+  position: relative;
+  top: 105px;
+  left: 175px;
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 19px -1px #000000;
+}
+#kastrophoto {
+  width: 50%;
+  position: relative;
+  top: 278px;
+  left: 430px;
+  border-radius: 10px;
+  transition: all 1.5s ease-in-out;
+}
+
+#kastrophoto:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+.article4 {
+  width: 40%;
+  position: relative;
+  top: 50px;
+  left: 530px;
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 19px -1px #000000;
+}
+#dimotikotheatrophoto {
+  width: 50%;
+  position: relative;
+  top: 278px;
+  left: 174px;
+  border-radius: 10px;
+  transition: all 1.5s ease-in-out;
+}
+
+#dimotikotheatrophoto:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+.article5 {
+  width: 40%;
+  position: relative;
+  top: 105px;
+  left: 175px;
+  background-color: rgba(255, 255, 255, 0.651);
+  text-align: justify;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 19px -1px #000000;
+}
+#arxaiologikomouseiophoto {
+  width: 50%;
+  position: relative;
+  top: 278px;
+  left: 430px;
+  border-radius: 10px;
+  transition: all 1.5s ease-in-out;
+}
+
+#arxaiologikomouseiophoto:hover {
+  z-index: 1;
+  transform: scale(1.2);
+}
+
+/* End of Places */
+
+/* photo gallery */
+
+.grid {
+  padding-top: 100px;
+  background-color: #b1c8d84f;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 20px;
+  align-items: stretch;
+}
+.grid img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+}
